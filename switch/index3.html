@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*3.en este caso también cuando el operador entre en la pagina debera pedirle su edad, si es igual o
+mayor de 18 dira un mensaje mayor de edad, en caso contrario debera pedirle los años que tiene que
+esperar para entrar al sitio .
+Dato: si le digo que tengo 19 años “puedes entrar”, si le digo que tengo 15 años dira “espera 3
+años”.
+       */
+
+      let edad = prompt("introduce tu edad");
+
+      if (edad >= 18) {
+        alert("Puedes entrar");
+      } else if (edad < 18) {
+        let resultado = 18 - edad;
+        alert("Espera " + resultado + " año");
+      }
+    </script>
+  </body>
+</html>

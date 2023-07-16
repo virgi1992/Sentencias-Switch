@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*9.Un comerciante hace descuentos a sus clientes de la siguiente forma: si ha comprado menos de
+100 euros no hay descuento, si la compra esta entre 100 y 300 euros le descuentan un 5%, si la
+compra esta entre 300 y 500 euros se le decuenta un 10%, si supera los 500 euros se le descuenta
+un 15%.
+Dato: hago una compra de 150 euros, pago 142,5 euros por el descuento.*/
+
+      let compra = prompt("introduce tu compra");
+
+      if (compra < 100) {
+        alert("No tienes descuento");
+      } else if (compra >= 100 && compra <= 300) {
+        let descuento = (compra * 5) / 100;
+        let resultado = compra - descuento;
+        alert("La compra es " + resultado + " euros");
+      } else if ((compra >= 300) & (compra <= 500)) {
+        descuento = (compra * 10) / 100;
+        resultado = compra - descuento;
+        alert("La compra es " + resultado + " euros");
+      } else if (compra > 500) {
+        descuento = (compra * 15) / 100;
+        resultado = compra - descuento;
+        alert("La compra es " + resultado + " euros");
+      }
+    </script>
+  </body>
+</html>

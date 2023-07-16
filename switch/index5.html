@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*5.En una sala de juegos existen 3 salas: Consolas juegos 2D, juegos 3D,realidad Vitual. Si un
+usuario paga 4 creditos puede acceder a todas, si paga 3 creditos solo podra acceder a las tres
+primeras si paga 2 creditos a las 2 primeras y si paga 1 credito solo a la primera sala.
+Dato: Teclee que pago 2 creditos el script dira que puedo acceder a las salas de la consola y juegos
+de 2D.*/
+
+      let creditos = prompt("Cuantos creditos va a ingresar usted");
+
+      switch (creditos) {
+        case "4":
+          creditos;
+          alert("Puedes ingresar a todas");
+          break;
+
+        case "3":
+          creditos;
+          alert("Solo puedes ingresar a Consolas, juegos 2D y juegos 3D");
+          break;
+
+        case "2":
+          creditos;
+          alert("Puedes ingresar a Consolas y juegos 2D");
+          break;
+
+        case "1":
+          creditos;
+          alert("Solo puedes acceder a Consolas");
+          break;
+
+        default:
+          creditos;
+          alert("Te has pasado de creditos chaval");
+      }
+    </script>
+  </body>
+</html>

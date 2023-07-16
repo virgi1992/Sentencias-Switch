@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*7.El usuario indicará la longitud y el alto de un cuadrado. Si la base y el alto son identicos dira que
+es un cuadrado, si la base es mayor que el alto dira que es un rectangulo, y si el alto es mayor que la
+base dira que es un rectangulo vertical.
+Dato: Si entro base es 10 y alto es 5 el resultado sera un rectangulo.*/
+
+      let base = prompt("introduce la base del rectangulo");
+      let alto = prompt("introduce el alto del rectangulo");
+
+      if (base > alto) {
+        alert("Es un RECTANGULO 😆");
+      } else if (base < alto) {
+        alert("Es un RECTANGULO VERTICAL 😑");
+      } else if (base === alto) {
+        alert("es un cuadrado 😎");
+      }
+    </script>
+  </body>
+</html>
